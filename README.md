@@ -12,5 +12,5 @@ npm install
 nodemon server.js
 
 # In any browser:
-link for an rest-api is : http://localhost:3000/api/users
+link for an rest-api is : http://localhost:3000/api/restaurants
 
