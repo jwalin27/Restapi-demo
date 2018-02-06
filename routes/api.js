@@ -5,15 +5,17 @@ var express = require('express');
 var router = express.Router();
 
 // Models
-var User = require('../models/users');
+
+var restaurant = require('../models/restaurant');
 
 
 /*
 router.get('/users', function(req,res){
 	res.send ('api working');
 });*/
-User.methods(['get', 'put', 'post', 'delete']);
-User.register(router, '/users');
+
+restaurant.methods(['get','put','post','delete']);
+restaurant.register(router, '/restaurants');
 
 // Return routers as modules
 module.exports = router;
